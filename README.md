@@ -10,9 +10,9 @@ Open the Docker panel in VS Code or use the terminal to build the Docker image:
 - docker build -t github-api .
 
 After the image is built, run the Docker container:
-- docker run -p 8080:8080 github-api
+- docker run -d -p 8080:8080 github-api
 
-Once the Docker container is running, you can test the API again by navigating to http://localhost:8080/octocat in your browser or using curl:
+Once the Docker container is running, you can test the API again.
 - curl http://localhost:8080/octocat
 
 
